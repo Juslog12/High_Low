@@ -21,7 +21,11 @@
 
 // end the loop
 
-$number = rand (1 , 100);
+if ($argc < 3) {
+	echo "I need a min and max number. Please input 2 numbers after the filename!\n";
+	exit(1);
+}
+$number = rand ($argv[1] , $argv[2]);
 
 
 fwrite(STDOUT, "Pick a number. What is your number?\n ");
@@ -56,4 +60,6 @@ do {
 
 $number_of_guesses++;
 
-fwrite (STDOUT, "You guessed right in $number_of_guesses guesses!");
+fwrite (STDOUT, "You guessed right in $number_of_guesses guesses!\n");
+
+
