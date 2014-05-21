@@ -15,7 +15,7 @@
 
 // prompt user to guess again
 
-// add to the guess cont
+// add to the guess count
 
 // if guess is equal to number echo "Winner!" and end the game
 
